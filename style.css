@@ -10,3 +10,5 @@
 .resource-search{display:flex;align-items:center;gap:10px;margin:20px 0;color:var(--purple,#7350bb)}.resource-search .search{flex:1;min-width:0;width:100%}
 
 .avatar-picker{display:flex;align-items:center;flex-direction:column;gap:5px;cursor:pointer;position:relative}.avatar-picker .avatar{width:52px;height:52px}.avatar-picker:focus-within{outline:2px solid var(--purple);outline-offset:4px;border-radius:10px}
+
+.badge.red{background:#fde9e7;color:#aa3434}.badge.gray{background:#eeeeF2;color:#606071}
