@@ -8,3 +8,5 @@
 .profile-back{width:36px;height:42px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--purple);display:grid;place-items:center;flex-shrink:0;font-size:32px;line-height:1}.profile-back:hover{background:var(--soft)}@media(max-width:760px){.profilemeta{padding-left:110px}.modal .field{margin-top:10px}.modal{padding:20px}}
 
 .resource-search{display:flex;align-items:center;gap:10px;margin:20px 0;color:var(--purple,#7350bb)}.resource-search .search{flex:1;min-width:0;width:100%}
+
+.avatar-picker{display:flex;align-items:center;flex-direction:column;gap:5px;cursor:pointer;position:relative}.avatar-picker .avatar{width:52px;height:52px}.avatar-picker:focus-within{outline:2px solid var(--purple);outline-offset:4px;border-radius:10px}
