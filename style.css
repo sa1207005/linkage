@@ -24,3 +24,5 @@
 .brand{border:0;background:transparent;text-align:left;cursor:pointer}.brand:focus-visible{outline:2px solid var(--purple);outline-offset:5px}.brand-icon{width:60px;height:40px;object-fit:contain}.comparison-scroll{overflow-x:auto}.comparison-scroll table{width:100%;min-width:480px;table-layout:fixed}.comparison-scroll th:first-child,.comparison-scroll td:first-child{width:20%}.comparison-scroll td{overflow-wrap:anywhere}.review-photo{width:64px;height:64px;object-fit:cover;border-radius:50%}.sidebar .nav{gap:6px}.welcome+.card{margin-bottom:24px}
 
 .sidebar-backdrop{display:none}@media(max-width:760px){.sidebar.open+.sidebar-backdrop{display:block;position:fixed;inset:0;background:#30263c60;z-index:19;border:0;border-radius:0;padding:0;cursor:pointer}}
+
+.stat-icon{display:flex;align-items:center;justify-content:center;line-height:1}.stat-icon svg,.resource-icon svg,.step b svg{display:block;flex-shrink:0}
