@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <title>LinkAge｜相伴成橋</title>
-  <rect width="64" height="64" rx="20" fill="#7353B8"/>
-  <circle cx="23" cy="20" r="4.5" fill="#FFFFFF"/>
-  <circle cx="41" cy="20" r="4.5" fill="#D9C9F5"/>
-  <path d="M14 43V36C14 30.5 18 27 23 27C28 27 32 31 32 36V42" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-  <path d="M50 43V36C50 30.5 46 27 41 27C36 27 32 31 32 36V42" stroke="#D9C9F5" stroke-width="5" stroke-linecap="round"/>
-  <path d="M20 46C23.5 50 28 52 32 52C36 52 40.5 50 44 46" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" role="img" aria-label="LinkAge 連結與陪伴">
+<circle cx="63" cy="17" r="13" fill="#7550bd"/><circle cx="142" cy="23" r="12" fill="#ad8bdd"/>
+<path d="M8 78 Q80 3 143 67 L143 92 L131 92 L131 67 Q79 28 19 83 Q8 91 8 78Z" fill="#7550bd"/>
+<path d="M36 49 L48 43 L48 92 L36 92Z" fill="#7550bd"/>
+<path d="M47 91 Q115 5 194 72 Q201 85 191 88 Q124 32 60 91Z" fill="#ad8bdd"/>
 </svg>
