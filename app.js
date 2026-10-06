@@ -192,9 +192,9 @@ saveDemo();
 let resourceDrafts=[],resourceDraftKey='',resourceDraftDeleteKey='',resourceRequests=[],resourceHistory=[],resourceEditing=-1,resourceRequestKey='',resourceManageTab='我的申請',resourceAction=null;
 try{const store=JSON.parse(demoLocalStorage.getItem('linkage-resources-v1')||'null');if(store){if(Array.isArray(store.resources))resources.splice(0,resources.length,...store.resources);resourceDrafts=store.drafts||[];resourceRequests=store.requests||[];resourceHistory=store.history||[]}}catch(e){}
 if(!demoLocalStorage.getItem('linkage-pending-examples-v1')){
- const base={...resources[2]};
+ const mealId=resources.findIndex(r=>r.type==='共餐');const base={...resources[mealId]};
  resourceRequests.push({key:'demo-pending-new-20261006',resourceId:-1,before:{},data:{name:'午後手作與茶敘（示範申請）',short:'午後手作與茶敘',type:'手作',tags:['手作','社交'],provider:'○○社區關懷據點（示範）',city:'臺中市',area:'西區',village:'示範里',place:'○○里活動中心一樓（示範）',day:'週四',time:'14:00–15:30',feeAmount:0,fee:'免費',feeNote:'材料由據點提供',traffic:'公車可達；首次可安排志工陪同',contact:'據點服務窗口（示範，聯絡方式待確認）',desc:'提供大尺寸材料與坐姿操作，可中途休息。每場八位，需事先登記。',symbol:'✂'},reason:'示範申請：新增適合初次參與長者的手作活動，請負責人確認場地、材料與志工安排。附件為虛構人物示範圖片。',date:'2026/10/06',submittedAt:Date.now(),author:'林書含',demo:true,attachmentPhoto:demoReviewPortrait()},
- {key:'demo-pending-update-20261006',resourceId:2,before:base,data:{...base,time:'11:00–13:00',traffic:'公車可達；行動不便者請事先洽詢接送'},reason:'示範修改：共餐提早半小時報到，並補充接送詢問方式。請核對提供單位確認後再核准。',date:'2026/10/06',submittedAt:Date.now(),author:'林書含',demo:true});
+ {key:'demo-pending-update-20261006',resourceId:mealId,before:base,data:{...base,time:'11:00–13:00',traffic:'公車可達；行動不便者請事先洽詢接送'},reason:'示範修改：共餐提早半小時報到，並補充接送詢問方式。請核對提供單位確認後再核准。',date:'2026/10/06',submittedAt:Date.now(),author:'林書含',demo:true});
  demoLocalStorage.setItem('linkage-pending-examples-v1','1');saveResourceStore();
 }
 let reviewCategory='全部',reviewResultKey='',reviewRead=new Set(),reviewHidden=new Set(),reviewClearUndo=[],reviewDeleteKeys=[];
