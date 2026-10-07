@@ -33,3 +33,5 @@
 
 /* Keep navigation separate from the institution note, including shorter screens. */
 .sidebar{padding-top:28px;padding-bottom:24px;overflow-y:auto}.sidebar .nav{margin-top:30px;gap:6px;margin-bottom:28px}.sidebar .nav button{padding-top:11px;padding-bottom:11px}.sidebar .sidebottom{flex-shrink:0}
+
+.support-success{text-align:center}.support-check{margin:auto;width:56px;height:56px;border-radius:50%;background:var(--soft);color:var(--purple);font-size:32px}.support-actions{justify-content:center;flex-wrap:wrap;gap:12px}.support-history-item{padding:18px}.support-history-item summary{cursor:pointer}.support-preview{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:8px}.support-full{white-space:pre-wrap;overflow-wrap:anywhere}.support-history-item summary .row{flex-wrap:wrap;gap:8px}
